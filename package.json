@@ -3,11 +3,14 @@
   "author": "axend",
   "version": "1.0.0",
   "scripts": {
-    "dev": "tsx watch src/app.ts",
     "lint": "eslint .",
     "format": "prettier --write .",
     "build": "tsc",
-    "start": "node dist/src/app.js"
+    "start": "node dist/src/app.js",
+    "dev": "tsx watch src/app.ts",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:studio": "prisma studio"
   },
   "license": "ISC",
   "type": "module",
